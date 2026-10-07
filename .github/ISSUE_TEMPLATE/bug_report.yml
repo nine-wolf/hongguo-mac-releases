@@ -1,0 +1,25 @@
+name: Mac 使用问题
+description: 反馈安装、搜索或播放问题
+title: "[Mac] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本
+      placeholder: 例如 1.0.0
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Mac 芯片与 macOS 版本
+      placeholder: 例如 M2 / macOS 26
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 操作步骤、预期结果和实际结果
+      description: 请遮住截图中的无关个人信息，无需提供账号凭证或私人观看记录。
+    validations:
+      required: true
