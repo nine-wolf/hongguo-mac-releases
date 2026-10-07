@@ -4,7 +4,7 @@
 
 [下载 Mac 安装包](https://github.com/nine-wolf/hongguo-mac-releases/releases/latest) · [安装教程](#安装教程) · [首次打开被拦截怎么办](#首次打开被拦截怎么办) · [反馈问题](https://github.com/nine-wolf/hongguo-mac-releases/issues)
 
-普通使用只需下载 `HongguoMac-1.0.0-arm64.dmg`。Python、Java 和播放组件已内置，无需安装安卓模拟器或额外运行环境。
+**安装只需下载 [HongguoMac-1.0.0-arm64.dmg](https://github.com/nine-wolf/hongguo-mac-releases/releases/download/v1.0.0/HongguoMac-1.0.0-arm64.dmg)**。Python、Java 和播放组件已内置，无需安装安卓模拟器或额外运行环境。Release 中的 ZIP、tar.gz 和说明文件均不需要安装。
 
 ## 软件界面
 
@@ -81,8 +81,15 @@
 
 ## 关于本仓库
 
-本仓库用于 **Mac 安装包发行、安装说明和问题反馈**。它不代表原 Windows 应用源码已开源。第三方组件的版权、许可与来源保留在应用包内，相关说明与第三方源码附件随 Release 提供。
+本仓库用于 **Mac 安装包发行、安装说明和问题反馈**，Git 仓库只包含 README、截图和反馈模板，未上传本应用的开发项目源码，也不代表原 Windows 应用源码已开源。
 
-普通用户只需下载 DMG；`HongguoMac-1.0.0-SHA256SUMS.txt` 用于核对文件一致性，第三方源码附件不是安装器。SHA-256 摘要不能代替发布者身份认证。
+Release 中几类附件的区别：
+
+- **DMG**：Mac 安装包，普通用户只需下载这个文件。
+- **INSTALL / SHA256SUMS / THIRD-PARTY-NOTICES**：安装说明、文件校验值及第三方组件说明，按需查阅。
+- **third-party-sources.zip**：Java、FFmpeg 等第三方运行组件的配套源码、许可及构建说明，**不是本应用的开发项目源码，也不是安装器**。为保留内置组件所需的源码提供方式，随发行包提供；安装时无需下载。
+- **Source code (zip) / Source code (tar.gz)**：GitHub 自动生成的发行标签仓库归档，内容只有当时的 README、截图和反馈模板，**没有本应用的开发项目源码**。[GitHub 官方说明](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
+
+第三方组件的版权、许可与来源保留在应用包内，各组件适用各自的许可证。`HongguoMac-1.0.0-SHA256SUMS.txt` 用于核对文件一致性，SHA-256 摘要不能代替发布者身份认证。
 
 遇到问题请 [提交 Issue](https://github.com/nine-wolf/hongguo-mac-releases/issues)，注明 Mac 芯片、macOS 版本、软件版本、操作步骤和提示内容。截图请遮住无关个人信息，无需提供账号凭证或私人观看记录。
